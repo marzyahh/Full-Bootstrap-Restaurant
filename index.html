@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./asset/CSS/master.css" />
+    <title>vegina-store</title>
+  </head>
+  <body>
+    <main class=" container">
+      <div class="row">
+        <div class="header d-flex border border-5 w-100">
+          <div
+            class="logo border col-6 col-xl-3 d-flex h-100"
+          >
+            <img
+              src="./asset/CSS/imgs/logo/logo-15.svg"
+              class="h-75 mt-2"
+              alt=""
+            />
+          </div>
+          <div
+            class="search d-none d-xl-flex justify-content-end align-items-center col-xl-6 border"
+          >
+            <input
+              class="col-8 me-3 position-relative h-75 border-0"
+              type="text"
+              placeholder="Search our store"
+            />
+            <i
+              class="bi bi-search pe-5 h3 mt-2 position-absolute text-secondary"
+            ></i>
+          </div>
+          <div
+            class="icons border d-flex  justify-content-evenly border border-danger align-items-center h1 col-6 col-xl-3"
+          >
+            <i class="bi bi-list ps-3 d-xl-none openMenu">
+              <section class="d-none">
+                <i
+                  class="close border border-danger d-flex bi bi-x-lg cursore-pointer justify-content-end pt-3 pe-3"
+                ></i>
+                <ul class="pt-5 h4 list-unstyled">
+                  <li
+                    class="border-bottom d-flex justify-content-between p-3 mt-5"
+                  >
+                    Home<i class="bi bi-chevron-down"></i>
+                  </li>
+                  <li class="border-bottom d-flex justify-content-between p-3">
+                    Shop<i class="bi bi-chevron-down"></i>
+                  </li>
+                  <li class="border-bottom d-flex justify-content-between p-3">
+                    Collection<i class="bi bi-chevron-down"></i>
+                  </li>
+                  <li class="border-bottom d-flex justify-content-between p-3">
+                    Pages<i class="bi bi-chevron-down"></i>
+                  </li>
+                  <li class="border-bottom d-flex justify-content-between p-3">
+                    Blogs<i class="bi bi-chevron-down"></i>
+                  </li>
+                  <li class="border-bottom d-flex justify-content-between p-3">
+                    Buy Vegist<i class="bi bi-chevron-down"></i>
+                  </li>
+                  <li class="pt-5 pb-5 d-flex ps-3">
+                    <i class="h3 bi bi-list"></i>Browser Category<i
+                      class="bi bi-chevron-down ps-5 ms-4"
+                    ></i>
+                  </li>
+                </ul>
+              </section>
+            </i>
+            <i class="bi bi-search ps-3 d-xl-none"></i>
+            <i class="bi bi-person ps-3"></i>
+            <i class="bi bi-heart ps-3"></i>
+            <i class="bi bi-bag ps-3"></i>
+          </div>
+        </div>
+        <!-- END OF HEADER -->
+        <!-- MENU Start -->
+        <div class="menu d-none d-xl-flex col-xl-12 border border-danger">
+          <ul
+            class=" h-100 d-flex  list-unstyled border col-10 border-info justify-content-start ps-5 ms-4"
+          >
+            <li
+              class="position-relative  col-xl-4 d-flex align-items-center ps-3"
+            >
+              <i class="bi bi-list h5 "></i>
+              <a
+                class="text-light h-100 justify-content-start ps-2 text-decoration-none align-items-center h5 d-flex"
+                href=""
+                >Browse Category
+
+                <div
+                  class="position-absolute subMenu1 top-100 start-0 w-100 bg-light"
+                >
+                  <ul class="list-unstyled w-100">
+                    <li class="d-flex h4 p-3 ps-0 w-100 position-relative">
+                      <a
+                        class="ps-2 w-100 text-decoration-none text-dark"
+                        href=""
+                        ><img class="pe-3" src="./asset/CSS/imgs/menu/4.jpg" alt="" /> Fresh
+                        Fruits</a>
+                        <i class="pe-3 bi bi-chevron-down text-dark"></i
+                            >
+                            <!-- SUBMENU THIRD -->
+                            <ul class="submenu2 d-flex position-absolute start-100 shadow bg-light">
+                                <div class="first col-5">
+                                    <ul class="list-unstyled">
+                                       <li><a class="text-decoration-none mb-3 d-flex" href="">Organic sataples</a></li>
+                                       <li><a class="text-decoration-none  h6 pt-3 d-flex" href="">Blackberry 100%organic</a></li>
+                                       <li><a class="text-decoration-none  h6 pt-3 d-flex" href="">Fresh &helthi food</a></li>
+                                       <li><a class="text-decoration-none  h6 pt-3 d-flex" href="">Roses Popular</a></li>
+                                       <li><a class="text-decoration-none  h6 pt-3 d-flex" href="">Searches Flowers</a></li>
+                                       <li><a class="text-decoration-none  h6 pt-3 d-flex" href="">Flower banana</a></li>
+                                    </ul>
+                                </div>
+                                <div class="second col-7 ps-3">
+                                    <ul class="list-unstyled "> 
+                                        <li><a class="text-decoration-none  d-flex mb-3" href="">Hearbs & Seasonings</a></li>
+                                        <li><a class="text-decoration-none  h6 pt-3 d-flex" href="">Blackberry 100%organic</a></li>
+                                        <li><a class="text-decoration-none  h6 pt-3 d-flex" href="">Fresh &helthi food</a></li>
+                                        <li><a class="text-decoration-none  h6 pt-3 d-flex" href="">Roses Popular</a></li>
+                                        <li><a class="text-decoration-none  h6 pt-3 d-flex" href="">Searches Flowers</a></li>
+                                        <li><a class="text-decoration-none  h6 pt-3 d-flex" href="">Flower banana</a></li>
+                                    </ul>
+            
+                                </div>
+                                <div class="img ">
+                                    <img class="h-100" src="./asset/CSS/imgs/menu/cat5_250x250.jpg" alt="">
+                                </div>
+                            </ul>
+                    </li>
+                    <li class="d-flex h4 p-3 ps-0 w-100">
+                      <a class="ps-2 w-100  text-decoration-none text-dark" href=""
+                        ><img class="pe-3" src="./asset/CSS/imgs/menu/5.jpg" alt="" />Fresh
+                        meat</a
+                      ><i class="pe-3 bi bi-chevron-down text-dark"></i>
+                    </li>
+                    <li class="d-flex h4 p-3 ps-0 w-100">
+                      <a class="ps-2 w-100  text-decoration-none text-dark" href=""
+                        ><img class="pe-3" src="./asset/CSS/imgs/menu/8.jpg" alt="" />Fresh
+                        Vegtable</a
+                      ><i class="pe-3 bi bi-chevron-down text-dark"></i>
+                    </li>
+                    <li class="d-flex h4 p-3 ps-0 w-100">
+                      <a class="ps-2 w-100  text-decoration-none text-dark" href=""
+                        ><img class=" pe-3" src="./asset/CSS/imgs/menu/9.jpg" alt="" />Green
+                        Searfood</a
+                      ><i class="pe-3 bi bi-chevron-down text-dark"></i>
+                    </li>
+                    <li class="d-flex h4 p-3 ps-0 w-100">
+                      <a class="text-decoration-none text-dark" href=""
+                        ><img class="pe-3 ps-3" src="./asset/CSS/imgs/menu/3.jpg" alt="" />Organic
+                        dryfruit</a
+                      >
+                    </li>
+                    <li class="d-flex h4 p-3 ps-0 w-100">
+                      <a class="text-decoration-none text-dark h6" href=""
+                        ><img
+                          class="pe-3 ps-3" src="./asset/CSS/imgs/menu/8.jpg"
+                          alt=""
+                        />Blackberry 100%organic</a
+                      >
+                    </li>
+                    <li class="d-flex h4 p-3 ps-0 w-100">
+                      <a class="text-decoration-none text-dark" href=""
+                        ><img
+                          class="pe-3 ps-3" src="./asset/CSS/imgs/menu/2.jpg"
+                          alt=""
+                        />sea&fish</a
+                      >
+                    </li>
+                    <li class="d-flex h4 p-3 ps-0 w-100">
+                      <a class="text-decoration-none text-dark" href=""
+                        ><img class="pe-3 ps-3" src="./asset/CSS/imgs/menu/1.jpg" alt="" />Summer
+                        fruit</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </a>
+              <i class="bi bi-chevron-down ps-5 ms-4 h5 pt-1"></i>
+            </li>
+            <li
+              class="m-2 col-1 d-flex justify-content-center align-items-center"
+            >
+              <a
+                class="text-light h-100 text-decoration-none h5 d-flex align-items-center"
+                href=""
+                >Home</a
+              >
+              <i class="bi bi-chevron-down ps-2 h5 pt-2"></i>
+            </li>
+            <li
+              class="col-1 d-flex justify-content-center align-items-center"
+            >
+              <a
+                class="text-light h-100 justify-content-center text-decoration-none h5 d-flex align-items-center"
+                href=""
+                >Shop</a
+              >
+              <i class="bi bi-chevron-down ps-2 h5 pt-2"></i>
+            </li>
+            <li
+              class="col-2 d-flex justify-content-center align-items-center"
+            >
+              <a
+                class="text-light h-100 justify-content-center text-decoration-none h5 d-flex align-items-center"
+                href=""
+                >Collection</a
+              >
+              <i class="bi bi-chevron-down ps-2 h5 pt-2"></i>
+            </li>
+            <li
+              class="m-2 col-1 d-flex justify-content-center align-items-center"
+            >
+              <a
+                class="text-light h-100 justify-content-center text-decoration-none h5 d-flex align-items-center"
+                href=""
+                >Pages</a
+              >
+              <i class="bi bi-chevron-down ps-2 h5 pt-2"></i>
+            </li>
+            <li class="col-1">
+              <a
+                class="text-light h-100 justify-content-center text-decoration-none h5 d-flex align-items-center"
+                href=""
+                >Blogs</a
+              >
+            </li>
+            <li class="col-2">
+              <a
+                class="text-light h-100 justify-content-center text-decoration-none h5 d-flex align-items-center"
+                href=""
+                >Buy Vegist</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- End of MEnu -->
+        <!-- Start Slider -->
+        <div class="slider col-12 row d-flex  mt-3">
+          <div class="slides h-100 col-10 col-md-11 col-lg-12 position-relative col-xl-8 me-5 ms-5 ms-lg-0 border">
+            <span class="position-absolute bottom-0 start-50 d-flex">
+              <span class="ps-3 ms-3 mb-3"></span>
+              <span class="ps-3 ms-3 mb-3"></span>
+              <span class="ps-3 ms-3 mb-3"></span>
+            </span>
+            <div class="position-absolute col-12">
+              <div class="anim  position-absolute start-50 bottom-50 h-25 border">
+                <p class="display-6 ">Orange Juice</p>
+              <h1 class="text-uppercase pt-3 "> Realistic</h1>
+              <h1 class="text-uppercase pb-4"> Fruit juciy</h1>
+              <button class="btn-lg bg-success border-0 p-3 px-5 text-light  ">Shop now</button>
+              </div>
+            </div>
+            <div class="position-absolute col-12">
+              <div class="anim position-absolute start-50 bottom-50 h-25 border">
+                <p class="display-6 ">Orange Juice</p>
+              <h1 class="text-uppercase pt-3 "> Realistic</h1>
+              <h1 class="text-uppercase pb-4"> Fruit juciy</h1>
+              <button class="btn-lg bg-success border-0 p-3 px-5 text-light  ">Shop now</button>
+              </div>
+            </div>
+            <div class="position-absolute col-12">
+                <div class="anim  position-absolute start-50 bottom-50 h-25 border">
+              <p class="display-6 ">Orange Juice</p>
+            <h1 class="text-uppercase pt-3 "> Realistic</h1>
+            <h1 class="text-uppercase pb-4"> Fruit juciy</h1>
+            <button class="btn-lg bg-success border-0 p-3 px-5 text-light  ">Shop now</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards border border-5 row mt-md-0 mt-2 col-12  col-xl-3 border">
+           <!-- <div class="orange border col-6 border-danger ms-sm-5 ms-md-3 col-md-5 col-xl-12 p-2 "> -->
+           <div class="orange border col-12 col-md-6  border-danger col-xl-12">
+             <figure class="d-flex position-relative col-12 col-md-10 col-xl-12">
+               <img src="./asset/CSS/imgs/cards/3.jpg" class="col-7 col-md-5 mt-1 col-xl-7" alt="" />
+               <img
+                 src="./asset/CSS/imgs/cards/4.jpg"
+                 class="position-absolute col-7 col-md-5 col-xl-7 h-100 "
+                 alt=""
+               />
+               <figcaption class="mt-5 mt-md-1 pt-4 ms-3  pt-xl-0 ms-xl-0">
+                 <p class="h4 pb-4 pb-md-2">Blood Orange With Kale</p>
+                 <span class="h3 text-warning d-xl-none">
+                   <i class="bi bi-star"></i>
+                   <i class="bi bi-star"></i>
+                   <i class="bi bi-star"></i>
+                   <i class="bi bi-star"></i>
+                   <i class="bi bi-star text-dark"></i>
+                 </span>
+                 <p class="text-success h4 mt-2">
+                   $16,00 <del class="h4 ps-2 text-dark">$20,00</del>
+                 </p>
+               </figcaption>
+             </figure>
+           </div>
+           <div class="juice col-6 border border-5 d-none d-md-flex col-xl-12 ">
+             <figure class="d-flex position-relative col-12 col-md-10 col-xl-12 ">
+               <img src="./asset/CSS/imgs/cards/1.jpg" class="col-7 col-md-5 mt-1 col-xl-7 " alt="" />
+               <img
+                 src="./asset/CSS/imgs/cards/2.jpg"
+                 class="position-absolute col-7 col-md-5 h-100 col-xl-7 border"
+                 alt=""
+               />
+               <figcaption class="mt-5 mt-md-1 pt-4 ms-3 pt-xl-0 ms-xl-0">
+                 <p class=" pb-4  pb-md-2 h4 border">Blood Orange With Kale</p>
+                 <span class="h3 text-warning d-xl-none">
+                   <i class="bi bi-star"></i>
+                   <i class="bi bi-star"></i>
+                   <i class="bi bi-star"></i>
+                   <i class="bi bi-star"></i>
+                   <i class="bi bi-star text-dark"></i>
+                 </span>
+                 <p class="text-success h4 mt-2">
+                   $16,00 <del class="h4 ps-2 text-dark">$20,00</del>
+                 </p>
+               </figcaption>
+             </figure>
+           </div>
+           <div class="cream d-none d-xl-flex col-xl-12">
+             <figure class="d-flex border position-relative col-xl-12">
+               <img src="./asset/CSS/imgs/cards/5.jpg" class=" col-7 mt-1 border   " alt="" />
+               <img
+                 src="./asset/CSS/imgs/cards/6.jpg"
+                 class="position-absolute col-7 h-100 col-xl-7 border"
+                 alt=""
+               />
+               <figcaption class="mt-5">
+                 <p class="h4 pb-4 pb-2">Blood Orange With Kale</p>
+                 <p class="text-success h4">
+                   $16,00 <del class="h4 ps-2 text-dark">$20,00</del>
+                 </p>
+               </figcaption>
+             </figure>
+           </div>
+       </div>
+      </div>
+
+      <!-- End of Slider -->
+
+      <section class="type">
+        <h1 class="text-center pb-3 text-uppercase">what make us deffirent?</h1>
+        <div class="circle col-12 row  ">
+            <div class="col-4 col-xl-2">
+              <figure class="">
+                <img src="./asset/CSS/imgs/circle/icon1.png" class="rounded-circle  " alt="">
+              </figure>
+                  <p class="">Suger Friendly</p>
+            </div>
+            <div class="col-4 col-xl-2">
+              <figure>
+                <img src="./asset/CSS/imgs/circle/icon2.png" class="rounded-circle" alt="">
+              </figure>
+                <p>Probiotics</p>
+            </div>
+            <div class="col-4 col-xl-2"><figure>
+              <figure>
+                <img src="./asset/CSS/imgs/circle/icon3.png" class="" alt="">
+              </figure>
+                <p>100% Vegan</p>
+            </div>
+   
+            <div class="col-4 col-xl-2">
+                 <figure>
+                  <img src="./asset/CSS/imgs/circle/icon4.png" alt="">
+                 </figure>
+                 <p>100% Vegan</p>
+            </div>
+            <div class="col-4 col-xl-2">
+              <figure>
+                <img src="./asset/CSS/imgs/circle/icon5.png" alt="">
+               </figure>
+               <p>100% Vegan</p>
+            </div>
+            <div class="col-4 col-xl-2">
+              <figure>
+                <img src="./asset/CSS/imgs/circle/icon6.png" alt="">
+               </figure>
+               <p>100% Vegan</p>
+            </div>
+        </div>
+      </section>
+  </div>
+
+
+        <!--  -->
+      </div>
+    </main>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./asset/JS/main.js"></script>
+</html>

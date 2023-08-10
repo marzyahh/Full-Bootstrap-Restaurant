@@ -1,0 +1,356 @@
+.hide {
+  // display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header {
+  height: 90px;
+  > .search {
+    input {
+      background-color: rgb(233, 243, 243);
+      outline: none;
+      border-radius: 3px;
+      &::placeholder {
+        font-size: 20px;
+        caret-color: black;
+        padding-left: 10px;
+      }
+    }
+  }
+  .icons {
+    i {
+      &:nth-of-type(1) {
+        > section {
+          height: 100vh;
+          // background: #fff;
+          // background-color: aqua;
+        }
+      }
+    }
+  }
+}
+.menu {
+  height: 60px;
+  background: rgb(67, 177, 138);
+  > ul {
+    > li {
+      color: white;
+      &:nth-of-type(1) {
+        background-color: rgb(41, 31, 81);
+
+        &:hover{
+            >div{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+      }
+    }
+  }
+  .subMenu1 {
+   z-index: 999;
+//    &:hover{
+//     // opacity: 0;
+//    }
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+>ul>li{
+    >i{
+        color: black;
+        cursor: pointer;
+        &:hover{
+            ~ul{
+                opacity: 1;
+                visibility: visible;
+            }
+            transform: rotate(-95deg);
+            // color: rgb(15, 175, 36);
+        }
+    }
+    >ul{
+        opacity: 0;
+        visibility: hidden;
+        transition: 1s;
+    
+         a{
+            color: black;
+            transition: .4s;
+            &:hover{
+                color: green
+            }
+        }
+    }
+      
+    }
+}
+}
+
+
+@keyframes img1 {
+  0%,
+  30%,
+  100% {
+    left: 0;
+  }
+
+  36% {
+    left: 100%;
+  }
+
+  36.0000000001%,
+  94% {
+    left: -100%;
+  }
+}
+@keyframes img2 {
+  0%,
+  30%,
+  100%,
+  69.00000001% {
+    left: -100%;
+  }
+
+  36%,
+  63% {
+    left: 0;
+  }
+
+  69% {
+    left: 100%;
+  }
+}
+@keyframes img3 {
+  0%,
+  63% {
+    left: -100%;
+  }
+
+  69%,
+  94% {
+    left: 0;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+
+@keyframes slide-top {
+
+  100% {
+      transform: translateY(-50px);
+       opacity: 1;
+  }
+}
+
+
+.slider {
+  height: 500px;
+  // background-color: red;
+  > div:nth-of-type(1) {
+    > span {
+      z-index: 99;
+      > * {
+        width: 15px;
+        height: 15px;
+        background-color: black;
+        border-radius: 50%;
+      }
+    }
+    .anim{
+      // animation: slide-top infinite;
+      // animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s infinite;
+
+      >*{
+        color: rgb(41,31,81);
+        // color: red;
+        opacity: 0;
+      }
+      >p{
+        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s alternate forwards;
+
+      }
+      >h1{
+        font-weight: 600;
+        font-family: 'Fredoka', sans-serif;
+      animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s alternate forwards;
+      }
+      >button{
+      animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s alternate forwards;
+
+      }
+    }
+    // >div:nth-of-type(1){
+
+    //   >.anim{
+    //     >*{
+    //       // color: rgb(41,31,81);
+    //       color: red;
+    //       opacity: 0;
+    //     }
+    //     >p{
+    //       animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s alternate forwards;
+  
+    //     }
+    //     >h1{
+    //       font-weight: 600;
+    //       font-family: 'Fredoka', sans-serif;
+    //     animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s alternate forwards;
+    //     }
+    //     >button{
+    //     animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 4s alternate forwards;
+  
+    //     }
+    //   }
+    // }
+    >div:nth-of-type(2){
+
+      >.anim{
+        >*{
+          // animation-delay: 10s;
+          color: green;
+        }
+        >p{
+          animation-delay: 5s;
+        }
+        >h1{
+          animation-delay: 6s;
+        }
+        >button{
+          animation-delay: 7s;
+
+        }
+      }
+    }
+    >div:nth-of-type(3){
+
+      >.anim{
+        >*{
+          // animation-delay: 10s;
+          color: blue;
+        }
+        >p{
+          animation-delay: 12s;
+        }
+        >h1{
+          animation-delay: 13s;
+        }
+        >button{
+          animation-delay: 14s;
+        }
+      }
+    }
+    overflow-x: hidden;
+
+    > div:nth-of-type(1) {
+      background-image: url(./imgs/logo/slides/slider1.jpg);
+      // background-color: red;
+      background-size: cover;
+      height: 100%;
+      background-repeat: no-repeat;
+      animation: img1 linear infinite 15s;
+    }
+
+    > div:nth-of-type(2) {
+      background-image: url(./imgs/logo/slides/slider2.jpg);
+      // background-color: blue;
+      background-size: cover;
+      height: 100%;
+      // border: 10px solid red;
+      background-repeat: no-repeat;
+      animation: img2 linear infinite 16s;
+    }
+    > div:nth-of-type(3) {
+      background-image: url(./imgs/logo/slides/slider3.jpg);
+      background-size: cover;
+      height: 100%;
+      background-repeat: no-repeat;
+      animation: img3 linear infinite 17s;
+    }
+  }
+  .cards {
+    > div:nth-of-type(1),
+    :nth-of-type(2),
+    :nth-of-type(3) {
+      //  border: 3px solid red;
+      transition: 2s;
+      &:hover {
+        > figure {
+          > img:nth-of-type(2) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.type{
+  margin-top: 350px;
+  .circle{
+    p{
+      padding-top: 40px;
+      padding-left: 30px;
+      font-size: 20px;
+    }
+    >div{
+      figure{
+        img{
+          position: relative;
+          transform: translate(100%, 30%);
+        }
+        &::before{
+          content: '';
+          display: flex;
+          width: 100px;
+          height: 100px;
+          background-color: rgb(216,233,211);
+          position: absolute;
+          border-radius: 50%;
+          transform: translate(47%, 2%);
+        }
+      }
+    }
+    >div:nth-of-type(2){
+      >figure{
+          &::before{
+            background-color: rgb(236,231,217);
+          }
+      }
+    }
+    >div:nth-of-type(3){
+      figure{
+          &::before{
+            background-color: rgb(209,225,220);
+          }
+      }
+    }
+    >div:nth-of-type(4){
+      figure{
+          &::before{
+            background-color: rgb(233,214,214);
+          }
+      }
+    }
+    >div:nth-of-type(5){
+      figure{
+          &::before{
+            background-color: rgb(231,231,231);
+          }
+      }
+    }
+    >div:nth-of-type(6){
+      figure{
+          &::before{
+            background-color: rgb(211,220,233)
+          }
+      }
+    }
+
+   
+    
+}
+}

@@ -1,0 +1,290 @@
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header {
+  height: 90px;
+}
+.header > .search input {
+  background-color: rgb(233, 243, 243);
+  outline: none;
+  border-radius: 3px;
+}
+.header > .search input::-moz-placeholder {
+  font-size: 20px;
+  caret-color: black;
+  padding-left: 10px;
+}
+.header > .search input:-ms-input-placeholder {
+  font-size: 20px;
+  caret-color: black;
+  padding-left: 10px;
+}
+.header > .search input::placeholder {
+  font-size: 20px;
+  caret-color: black;
+  padding-left: 10px;
+}
+.header .icons i:nth-of-type(1) > section {
+  height: 100vh;
+}
+
+.menu {
+  height: 60px;
+  background: rgb(67, 177, 138);
+}
+.menu > ul > li {
+  color: white;
+}
+.menu > ul > li:nth-of-type(1) {
+  background-color: rgb(41, 31, 81);
+}
+.menu > ul > li:nth-of-type(1):hover > div {
+  opacity: 1;
+  visibility: visible;
+}
+.menu .subMenu1 {
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+}
+.menu .subMenu1 > ul > li > i {
+  color: black;
+  cursor: pointer;
+}
+.menu .subMenu1 > ul > li > i:hover {
+  transform: rotate(-95deg);
+}
+.menu .subMenu1 > ul > li > i:hover ~ ul {
+  opacity: 1;
+  visibility: visible;
+}
+.menu .subMenu1 > ul > li > ul {
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+}
+.menu .subMenu1 > ul > li > ul a {
+  color: black;
+  transition: 0.4s;
+}
+.menu .subMenu1 > ul > li > ul a:hover {
+  color: green;
+}
+
+@-webkit-keyframes img1 {
+  0%, 30%, 100% {
+    left: 0;
+  }
+  36% {
+    left: 100%;
+  }
+  36.0000000001%, 94% {
+    left: -100%;
+  }
+}
+
+@keyframes img1 {
+  0%, 30%, 100% {
+    left: 0;
+  }
+  36% {
+    left: 100%;
+  }
+  36.0000000001%, 94% {
+    left: -100%;
+  }
+}
+@-webkit-keyframes img2 {
+  0%, 30%, 100%, 69.00000001% {
+    left: -100%;
+  }
+  36%, 63% {
+    left: 0;
+  }
+  69% {
+    left: 100%;
+  }
+}
+@keyframes img2 {
+  0%, 30%, 100%, 69.00000001% {
+    left: -100%;
+  }
+  36%, 63% {
+    left: 0;
+  }
+  69% {
+    left: 100%;
+  }
+}
+@-webkit-keyframes img3 {
+  0%, 63% {
+    left: -100%;
+  }
+  69%, 94% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes img3 {
+  0%, 63% {
+    left: -100%;
+  }
+  69%, 94% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@-webkit-keyframes slide-top {
+  100% {
+    transform: translateY(-50px);
+    opacity: 1;
+  }
+}
+@keyframes slide-top {
+  100% {
+    transform: translateY(-50px);
+    opacity: 1;
+  }
+}
+.slider {
+  height: 500px;
+}
+.slider > div:nth-of-type(1) {
+  overflow-x: hidden;
+}
+.slider > div:nth-of-type(1) > span {
+  z-index: 99;
+}
+.slider > div:nth-of-type(1) > span > * {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+}
+.slider > div:nth-of-type(1) .anim > * {
+  color: rgb(41, 31, 81);
+  opacity: 0;
+}
+.slider > div:nth-of-type(1) .anim > p {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s alternate forwards;
+          animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s alternate forwards;
+}
+.slider > div:nth-of-type(1) .anim > h1 {
+  font-weight: 600;
+  font-family: "Fredoka", sans-serif;
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s alternate forwards;
+          animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s alternate forwards;
+}
+.slider > div:nth-of-type(1) .anim > button {
+  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s alternate forwards;
+          animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s alternate forwards;
+}
+.slider > div:nth-of-type(1) > div:nth-of-type(2) > .anim > * {
+  color: green;
+}
+.slider > div:nth-of-type(1) > div:nth-of-type(2) > .anim > p {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.slider > div:nth-of-type(1) > div:nth-of-type(2) > .anim > h1 {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+.slider > div:nth-of-type(1) > div:nth-of-type(2) > .anim > button {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.slider > div:nth-of-type(1) > div:nth-of-type(3) > .anim > * {
+  color: blue;
+}
+.slider > div:nth-of-type(1) > div:nth-of-type(3) > .anim > p {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+.slider > div:nth-of-type(1) > div:nth-of-type(3) > .anim > h1 {
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+}
+.slider > div:nth-of-type(1) > div:nth-of-type(3) > .anim > button {
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+.slider > div:nth-of-type(1) > div:nth-of-type(1) {
+  background-image: url(./imgs/logo/slides/slider1.jpg);
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+  -webkit-animation: img1 linear infinite 15s;
+          animation: img1 linear infinite 15s;
+}
+.slider > div:nth-of-type(1) > div:nth-of-type(2) {
+  background-image: url(./imgs/logo/slides/slider2.jpg);
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+  -webkit-animation: img2 linear infinite 16s;
+          animation: img2 linear infinite 16s;
+}
+.slider > div:nth-of-type(1) > div:nth-of-type(3) {
+  background-image: url(./imgs/logo/slides/slider3.jpg);
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+  -webkit-animation: img3 linear infinite 17s;
+          animation: img3 linear infinite 17s;
+}
+.slider .cards > div:nth-of-type(1),
+.slider .cards :nth-of-type(2),
+.slider .cards :nth-of-type(3) {
+  transition: 2s;
+}
+.slider .cards > div:nth-of-type(1):hover > figure > img:nth-of-type(2),
+.slider .cards :nth-of-type(2):hover > figure > img:nth-of-type(2),
+.slider .cards :nth-of-type(3):hover > figure > img:nth-of-type(2) {
+  display: none;
+}
+
+.type {
+  margin-top: 350px;
+}
+.type .circle p {
+  padding-top: 40px;
+  padding-left: 30px;
+  font-size: 20px;
+}
+.type .circle > div figure img {
+  position: relative;
+  transform: translate(100%, 30%);
+}
+.type .circle > div figure::before {
+  content: "";
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(216, 233, 211);
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(47%, 2%);
+}
+.type .circle > div:nth-of-type(2) > figure::before {
+  background-color: rgb(236, 231, 217);
+}
+.type .circle > div:nth-of-type(3) figure::before {
+  background-color: rgb(209, 225, 220);
+}
+.type .circle > div:nth-of-type(4) figure::before {
+  background-color: rgb(233, 214, 214);
+}
+.type .circle > div:nth-of-type(5) figure::before {
+  background-color: rgb(231, 231, 231);
+}
+.type .circle > div:nth-of-type(6) figure::before {
+  background-color: rgb(211, 220, 233);
+}/*# sourceMappingURL=master.css.map */
