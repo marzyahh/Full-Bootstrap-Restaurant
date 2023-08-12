@@ -421,7 +421,7 @@
 
   .card_wrapper{
       width: 100%;
-      height: 550px;
+      height: 700px;
 position: relative;
       .card_box{
         transition: .4s;
@@ -492,4 +492,140 @@ position: relative;
         }
       }
    }
+}
+
+.desc{
+  height: 400px;
+  div{
+    width: 520px;
+    height: 100%;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: rgb(249,221,169);
+    padding: 20px;
+    >h2{
+      padding-top: 150px;
+      font-weight: 800;
+    }
+    >p{
+      padding-bottom: 150px;
+      padding-top: 20px;
+      font-size: 20px;
+    }
+  }
+  >div:nth-of-type(1){
+    background-color: rgb(52,45,82);
+  }
+  >div:nth-of-type(2){
+    background-color: rgb(74,67,100);
+  }
+  >div:nth-of-type(3){
+    background-color: rgb(95,89,120);
+  }
+}
+
+.item_to_card{
+  .card_sec{
+    >h2{
+      color: #291f51;
+    }
+    .item_desc{
+      // border: 2px solid green;
+      button{
+        border: none;
+        outline: none;
+        background: #fff;
+      }
+      button:hover{
+        border: 2px solid rgb(67,177,138);
+        outline: none;
+      }
+      button:focus{
+        border: none;
+        outline: none;
+      }
+      .size, .flavour{
+       >button:nth-of-type(1){
+           border: 1px solid  rgb(67,177,138);
+       }
+      }
+      .cardBtn{
+        >button{
+
+          width: 300px;
+          background-color: rgb(67,177,138);
+          &:hover{
+          background-color: #291f51;
+          }
+        }
+      }
+
+      .payment{
+        img{
+          width: 55px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes animationBar  {
+  0%{
+    transform: translateX(0px);
+  }
+  80%{
+    transform: translateX(110%);
+  }
+  100%{
+    transform: translateX(-100px);
+  }
+  
+}
+@keyframes animationBar2  {
+  to{
+    transform: translateX(80%);
+  }
+  
+}
+@keyframes animationBar3  {
+  to{
+    transform: translateX(60%);
+  }
+  
+}
+
+.animationBar{
+  overflow-x: hidden;
+  background-image:linear-gradient(to right, rgb(255,240,217), rgb(255,219,186), rgb(255,193,149)) ;
+  h6{
+    color: #291f51;
+    animation: animationBar linear infinite 15s;
+  }
+  h6:nth-of-type(2){
+    color: #291f51;
+    transform: translateX(-500px);
+    animation: animationBar2 linear infinite  15s;
+  }
+  h6:nth-of-type(3){
+    color: #291f51;
+    transform: translateX(-1000px);
+    animation: animationBar3 linear infinite  15s;
+  }
+}
+
+.comments{
+  height: 270px;
+
+    color: #291f51;
+    .comment{
+      color: rgb(93,85,123);
+      line-height: 25px;
+      font-size: 20px;
+    }
+    .card_box{
+      width: 400px;
+      background-color: #291f51;
+    }
 }

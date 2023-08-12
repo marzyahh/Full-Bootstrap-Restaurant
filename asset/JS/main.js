@@ -60,3 +60,24 @@ $('.owl-carousel.slider_carousel').owlCarousel({
         }
     }
 })
+$('.comments').owlCarousel({
+
+    responsive:{
+        0:{
+            items:1
+        },
+        300:{
+            items: 1
+        },
+        600:{
+            items:1
+        },
+        800:{
+            items:2
+        },
+        1200:{
+            items:3
+        }
+    }
+})
+
