@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap");
 .hide {
   opacity: 0;
   visibility: hidden;
@@ -287,4 +288,125 @@
 }
 .type .circle > div:nth-of-type(6) figure::before {
   background-color: rgb(211, 220, 233);
+}
+
+@-webkit-keyframes spining {
+  to {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@keyframes spining {
+  to {
+    width: 50px;
+    height: 50px;
+  }
+}
+.shop {
+  height: 450px;
+}
+.shop .left > * {
+  color: rgb(41, 31, 81);
+  font-family: "Fredoka", sans-serif;
+}
+.shop .left > h2 {
+  font-weight: bolder;
+}
+.shop .left > button {
+  background-color: rgb(41, 31, 81);
+}
+.shop .rightImg {
+  position: relative;
+}
+.shop .rightImg span {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  display: flex;
+  position: absolute;
+  top: 60%;
+  left: 26%;
+  border-radius: 50%;
+}
+.shop .rightImg span::before {
+  content: "";
+  display: flex;
+  width: 0px;
+  height: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  border-radius: 50%;
+  top: -20%;
+  left: -20%;
+  -webkit-animation: spining linear infinite 3s;
+          animation: spining linear infinite 3s;
+  z-index: 0;
+}
+.shop .rightImg > span:nth-of-type(2) {
+  left: 46%;
+}
+.shop .rightImg > span:nth-of-type(3) {
+  left: 66%;
+}
+
+.trend .card_wrapper {
+  width: 100%;
+  height: 550px;
+  position: relative;
+}
+.trend .card_wrapper .card_box {
+  transition: 0.4s;
+  position: relative;
+}
+.trend .card_wrapper .card_box > .to_card {
+  display: none;
+  position: absolute;
+  top: 56%;
+  width: 100%;
+  border-radius: 10px;
+  height: 50px;
+}
+.trend .card_wrapper .card_box:hover > .to_card {
+  display: flex;
+  line-height: 50px;
+  justify-content: center;
+  background: rgb(67, 177, 138);
+  font-size: 20px;
+}
+.trend .card_wrapper .card_box:hover > .to_card > i {
+  padding-right: 15px;
+}
+.trend .card_wrapper .card_box:hover > .to_card:hover {
+  background-color: #291f51;
+}
+.trend .card_wrapper .card_box:hover > img:nth-of-type(2) {
+  display: none;
+}
+.trend .card_wrapper .head_text {
+  color: #291f51;
+  font-weight: bolder;
+  font-family: "Fredoka", sans-serif;
+  font-size: 50px;
+}
+.trend .card_wrapper .card_text {
+  padding: 30px 20px 25px 20px;
+}
+.trend .card_wrapper .owl-nav > .owl-prev, .trend .card_wrapper .owl-nav > .owl-next {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(67, 177, 138);
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  line-height: 35px;
+  top: 50%;
+}
+.trend .card_wrapper .owl-nav > .owl-next {
+  right: -5%;
+}
+.trend .card_wrapper .owl-nav > .owl-prev {
+  left: -5%;
 }/*# sourceMappingURL=master.css.map */

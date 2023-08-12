@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap');
 .hide {
   // display: none;
   opacity: 0;
@@ -353,4 +354,142 @@
    
     
 }
+}
+
+@keyframes spining {
+  to{
+    // border: 15px solid rgba(0, 0, 0, 0.121);
+    width: 50px;
+    height: 50px;
+    // background-color: rgb(101, 98, 98);
+  }
+  
+}
+
+.shop{
+  height: 450px;
+  .left{
+    >*
+    {color: rgb(41,31,81);
+      font-family: 'Fredoka', sans-serif;
+    }
+    >h2{
+      font-weight: bolder;
+    }
+    >button{
+      background-color: rgb(41,31,81);
+    }
+  }
+  .rightImg{
+    position: relative;
+    span{
+      width: 25px;
+      height: 25px;
+      background-color: #fff;
+      display: flex;
+      position: absolute;
+      top: 60%;
+      left: 26%;
+      border-radius: 50%;
+      &::before{
+        content: '';
+        display: flex;
+        width: 0px;
+        height: 0px;
+        background-color: rgba(0, 0, 0, 0);;
+        position: absolute;
+        border-radius: 50%;
+        top: -20%;
+        left: -20%;
+        // animation: spining linear infinite 3s;
+        animation: spining linear infinite 3s;
+        z-index: 0;
+      }
+    }
+    >span:nth-of-type(2){
+        left: 46%;
+      
+    }
+    >span:nth-of-type(3){
+        left: 66%;
+      
+    }
+  }
+}
+
+.trend{
+
+  .card_wrapper{
+      width: 100%;
+      height: 550px;
+position: relative;
+      .card_box{
+        transition: .4s;
+        position: relative;
+        >.to_card{
+          display: none;
+          position: absolute;
+          top: 56%;
+          width: 100%;
+          border-radius: 10px;
+          height: 50px;
+         
+
+        }
+        &:hover{
+       >.to_card{
+        display: flex;
+        // align-items: center;
+        line-height: 50px;
+        justify-content: center;
+        background: rgb(67,177,138);
+        font-size: 20px;
+        >i{
+          padding-right: 15px;
+        }
+        &:hover{
+          background-color: #291f51;
+        }
+       }
+      }
+        &:hover{
+          >img:nth-of-type(2){
+             display: none;
+          }
+        }
+        
+      }
+      .head_text{
+       color: #291f51;
+       font-weight: bolder;
+       font-family: 'Fredoka', sans-serif;
+       font-size: 50px;
+
+      }
+      .card_text{
+        padding: 30px 20px 25px 20px;
+      }
+      .owl-nav{
+        // position: relative;
+
+        >.owl-prev, >.owl-next{
+          width: 50px;
+          height: 50px;
+          background-color: rgb(67,177,138);
+          position: absolute;
+          color: white;
+          font-size: 50px;
+           display: flex;
+           justify-content: center;
+           line-height: 35px;
+          top: 50%;
+        }
+        >.owl-next{
+          right: -5%;
+        }
+        >.owl-prev{
+          left: -5%;          
+        }
+      }
+   }
 }

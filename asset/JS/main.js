@@ -29,3 +29,34 @@ _openMenu.addEventListener('click', ()=>{
 })
 
 
+
+
+// owl
+$('.owl-carousel.slider_carousel').owlCarousel({
+    loop:true,
+    dots: true,
+    margin:30,
+    stagePadding:2,
+    autoplay: true,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        300:{
+            items: 1
+        },
+        600:{
+            items:1
+        },
+        800:{
+            items:2
+        },
+        1200:{
+            items:3
+        },
+        1400:{
+            items: 4
+        }
+    }
+})
