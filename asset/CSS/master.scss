@@ -7,6 +7,7 @@
 
 .header {
   height: 90px;
+  z-index: 999999;
   > .search {
     input {
       background-color: rgb(233, 243, 243);
@@ -33,6 +34,7 @@
 }
 .menu {
   height: 60px;
+  margin-top: 90px;
   background: rgb(67, 177, 138);
   > ul {
     > li {
@@ -616,16 +618,113 @@ position: relative;
 }
 
 .comments{
-  height: 270px;
-
+  height: 310px;
+  position: relative;
     color: #291f51;
-    .comment{
-      color: rgb(93,85,123);
-      line-height: 25px;
-      font-size: 20px;
+    .owl-carousel{
+      .card_box{
+        background-color: #291f51;
+        border: 1px solid rgb(67,177,138) ;
+        
+        >.card_text{
+          >p{
+            color: rgb(93,85,123);
+            line-height: 25px;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .owl-nav{
+        >.owl-prev, >.owl-next{
+          width: 30px;
+          height: 30px;
+          background-color: rgb(67,177,138);
+          position: absolute;
+          color: white;
+          font-size: 50px;
+           display: flex;
+           justify-content: center;
+           line-height: 20px;
+          top: 40%;
+        }
+        >.owl-next{
+          right: 1.6%;
+        }
+        >.owl-prev{
+          left: 2.2%;          
+        }
+      }
     }
-    .card_box{
-      width: 400px;
-      background-color: #291f51;
+
+    .owl-dots{
+      display: flex;justify-content: center;
+       .owl-dot span {
+        width: 10px;
+        height: 10px;
+        margin: 5px 7px;
+        text-align: center;
+        background: rgb(67,177,138);
+        display: block;
+        transition: opacity .2s ease;
+        border-radius: 30px;
     }
+    
+     .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: #291f51;
+    }
+    }
+}
+
+.news{
+  margin-top: 250px;
+  min-height: 550px;
+  >h2{
+    color: #291f51;
+    font-weight: 700;
+    height: 50px;
+  }
+  >div{
+   min-height: 230px;
+   div{
+    // height: 100%;
+    >figure{
+      &:hover{
+      >img{
+          transform: scale(1.1);
+        }
+      }
+      >figcaption{
+        color: #291f51;
+
+        >span{
+          cursor: pointer;
+          font-size: 20px;
+          &:hover{
+            color: rgb(66, 178, 138);
+          }
+          }
+        >h5{
+          cursor: pointer;
+          font-size: 25px;
+          &:hover{
+            color: rgb(66, 178, 138);
+          }
+          font-weight: 700;
+        }
+      }
+    }
+   }
+   
+  }
+  button{
+    width: 200px;
+    height: 50px;
+    background-color: #291f51;
+    border: none;
+    outline: none;
+    &:hover{
+      background-color: rgb(66, 178, 138);
+    }    
+  }
 }
