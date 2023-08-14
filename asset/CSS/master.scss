@@ -580,27 +580,47 @@ position: relative;
   }
 }
 
-@keyframes animationBar  {
-  0%{
-    transform: translateX(0px);
-  }
-  80%{
-    transform: translateX(110%);
-  }
-  100%{
-    transform: translateX(-100px);
-  }
-  
+@keyframes animationBar {
+  0% {transform: translateX(100%);
+      -webkit-transform: translateX(100%);}
+    100% {transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);}
 }
-@keyframes animationBar2  {
-  to{
-    transform: translateX(80%);
-  }
-  
+// @keyframes animationBar  {
+//   4%{
+//     transform: translateX(-100%);
+//   }
+//   // 2%{
+//   //   // transform: translateX(100%);
+//   // }
+//   100%{
+//     transform: translateX(-104%);
+//     }
+//   }
+@keyframes animationBar2 {
+  0% {transform: translateX(0%);
+      -webkit-transform: translateX(0%);}
+    100% {transform: translateX(-200%);
+        -webkit-transform: translateX(-200%);}
 }
+// @keyframes animationBar2  {
+//   0%{
+//     transform: translateX(100%);
+//   }
+//   100%{
+//     transform: translateX(-103%);
+//   }
+  
+//  }
 @keyframes animationBar3  {
-  to{
-    transform: translateX(60%);
+  0%{
+    transform: translateX(100%);
+  }
+  
+}
+@keyframes animationBar4  {
+  0%{
+    transform: translateX(9%);
   }
   
 }
@@ -608,19 +628,27 @@ position: relative;
 .animationBar{
   overflow-x: hidden;
   background-image:linear-gradient(to right, rgb(255,240,217), rgb(255,219,186), rgb(255,193,149)) ;
-  h6{
-    color: #291f51;
-    animation: animationBar linear infinite 15s;
+  >h6{
+    // color: #291f51;
+    color: red;
+    // animation:  linear infinite 10s;
+    animation: animationBar 20s linear infinite;
   }
   h6:nth-of-type(2){
     color: #291f51;
-    transform: translateX(-500px);
-    animation: animationBar2 linear infinite  15s;
+    // animation: animationBar2 linear infinite   30s;
+    animation: animationBar2 30s linear infinite;
+    animation-delay: 10s;
   }
   h6:nth-of-type(3){
-    color: #291f51;
-    transform: translateX(-1000px);
-    animation: animationBar3 linear infinite  15s;
+    color: yellow;
+    animation: animationBar1  linear infinite  20s;
+    animation-delay: 10s;
+
+  }
+  h6:nth-of-type(4){
+    color: green;
+    animation: animationBar2  linear infinite  20s;
   }
 }
 

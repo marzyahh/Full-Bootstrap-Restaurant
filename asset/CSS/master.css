@@ -484,67 +484,92 @@
 
 @-webkit-keyframes animationBar {
   0% {
-    transform: translateX(0px);
-  }
-  80% {
-    transform: translateX(110%);
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
   }
   100% {
-    transform: translateX(-100px);
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
   }
 }
 
 @keyframes animationBar {
   0% {
-    transform: translateX(0px);
-  }
-  80% {
-    transform: translateX(110%);
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
   }
   100% {
-    transform: translateX(-100px);
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
   }
 }
 @-webkit-keyframes animationBar2 {
-  to {
-    transform: translateX(80%);
+  0% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
   }
 }
 @keyframes animationBar2 {
-  to {
-    transform: translateX(80%);
+  0% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
   }
 }
 @-webkit-keyframes animationBar3 {
-  to {
-    transform: translateX(60%);
+  0% {
+    transform: translateX(100%);
   }
 }
 @keyframes animationBar3 {
-  to {
-    transform: translateX(60%);
+  0% {
+    transform: translateX(100%);
+  }
+}
+@-webkit-keyframes animationBar4 {
+  0% {
+    transform: translateX(9%);
+  }
+}
+@keyframes animationBar4 {
+  0% {
+    transform: translateX(9%);
   }
 }
 .animationBar {
   overflow-x: hidden;
   background-image: linear-gradient(to right, rgb(255, 240, 217), rgb(255, 219, 186), rgb(255, 193, 149));
 }
-.animationBar h6 {
-  color: #291f51;
-  -webkit-animation: animationBar linear infinite 15s;
-          animation: animationBar linear infinite 15s;
+.animationBar > h6 {
+  color: red;
+  -webkit-animation: animationBar 20s linear infinite;
+          animation: animationBar 20s linear infinite;
 }
 .animationBar h6:nth-of-type(2) {
   color: #291f51;
-  transform: translateX(-500px);
-  -webkit-animation: animationBar2 linear infinite 15s;
-          animation: animationBar2 linear infinite 15s;
+  -webkit-animation: animationBar2 30s linear infinite;
+          animation: animationBar2 30s linear infinite;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
 }
 .animationBar h6:nth-of-type(3) {
-  color: #291f51;
-  transform: translateX(-1000px);
-  -webkit-animation: animationBar3 linear infinite 15s;
-          animation: animationBar3 linear infinite 15s;
+  color: yellow;
+  -webkit-animation: animationBar1 linear infinite 20s;
+          animation: animationBar1 linear infinite 20s;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+.animationBar h6:nth-of-type(4) {
+  color: green;
+  -webkit-animation: animationBar2 linear infinite 20s;
+          animation: animationBar2 linear infinite 20s;
 }
 
 .comments {
