@@ -286,6 +286,7 @@
     :nth-of-type(2),
     :nth-of-type(3) {
       //  border: 3px solid red;
+      height: 170px;
       transition: 2s;
       &:hover {
         > figure {
@@ -504,24 +505,25 @@ position: relative;
 }
 
 .desc{
-  height: 400px;
+  // height: 100px;
   div{
     width: 520px;
-    height: 100%;
+    // height: 100%;
     display: flex;
-    align-content: space-around;
+    // align-content: space-around;
     justify-content: center;
     flex-wrap: wrap;
     color: rgb(249,221,169);
     padding: 20px;
     >h2{
-      padding-top: 150px;
+      padding-top: 80px;
       font-weight: 800;
     }
     >p{
       padding-bottom: 150px;
       padding-top: 20px;
       font-size: 20px;
+      padding-right: 20px;
     }
   }
   >div:nth-of-type(1){
@@ -563,7 +565,7 @@ position: relative;
       .cardBtn{
         >button{
 
-          width: 300px;
+          // width: 300px;
           background-color: rgb(67,177,138);
           &:hover{
           background-color: #291f51;
@@ -714,6 +716,12 @@ position: relative;
 .news{
   margin-top: 250px;
   min-height: 550px;
+  @media screen and (max-width: 567px) {
+    
+      margin-top: 320px;
+
+    
+  }
   >h2{
     color: #291f51;
     font-weight: 700;

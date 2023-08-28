@@ -253,6 +253,7 @@
 .slider .cards > div:nth-of-type(1),
 .slider .cards :nth-of-type(2),
 .slider .cards :nth-of-type(3) {
+  height: 170px;
   transition: 2s;
 }
 .slider .cards > div:nth-of-type(1):hover > figure > img:nth-of-type(2),
@@ -420,27 +421,23 @@
   left: -5%;
 }
 
-.desc {
-  height: 400px;
-}
 .desc div {
   width: 520px;
-  height: 100%;
   display: flex;
-  align-content: space-around;
   justify-content: center;
   flex-wrap: wrap;
   color: rgb(249, 221, 169);
   padding: 20px;
 }
 .desc div > h2 {
-  padding-top: 150px;
+  padding-top: 80px;
   font-weight: 800;
 }
 .desc div > p {
   padding-bottom: 150px;
   padding-top: 20px;
   font-size: 20px;
+  padding-right: 20px;
 }
 .desc > div:nth-of-type(1) {
   background-color: rgb(52, 45, 82);
@@ -472,7 +469,6 @@
   border: 1px solid rgb(67, 177, 138);
 }
 .item_to_card .card_sec .item_desc .cardBtn > button {
-  width: 300px;
   background-color: rgb(67, 177, 138);
 }
 .item_to_card .card_sec .item_desc .cardBtn > button:hover {
@@ -625,6 +621,11 @@
 .news {
   margin-top: 250px;
   min-height: 550px;
+}
+@media screen and (max-width: 567px) {
+  .news {
+    margin-top: 320px;
+  }
 }
 .news > h2 {
   color: #291f51;
